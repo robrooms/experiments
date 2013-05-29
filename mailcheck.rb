@@ -24,7 +24,7 @@ if "#{new_emails.length}" != "0"
   puts 'Mark all as read (y/N)?'
   case gets.strip
     when 'Y', 'y', 'yes'
-   		new_emails.reverse_each do |email|
+   	new_emails.reverse_each do |email|
 	    email.mark(:read)
 	end
     when /\A[nN]o?\Z/, ''
